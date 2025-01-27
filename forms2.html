@@ -1,18 +1,32 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <body>
-<p><strong>peronal details</strong></p>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br><br>
-  <label for="username">Username:</label><br>
-  <input type="text" id="username" name="username"><br>
-  <label for="pwd">Password:</label><br>
-  <input type="password" id="pwd" name="pwd"><br><br>
-  <input type="submit" value="Submit">
-</form>
+ <form action="/action_page.php" method="post">
+            <label for="fname">First Name:</label><br><br>
+            <input type="text" id="fname" name="fname" required><br><br>
+            
+            <label for="lname">Last Name:</label><br><br>
+            <input type="text" id="lname" name="lname" required><br><br>
+            
+            <label for="username">Username:</label><br><br>
+            <input type="text" id="username" name="username" required><br><br>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            
+            <label for="pwd">Password:</label>
+            
+            <input type="password" id="pwd" name="pwd" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
 </body>
 </html>
